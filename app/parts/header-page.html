@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title><!--#echo var="title" --></title>
+    <meta name="description" content="">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+<body>
+<div class="main main--page" id="top">
+
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-4 col-6">
+                        <a href="/" class="header__logo">
+                            <img src="images/dist/logo2.svg" loading="lazy" width="185" height="32" alt="">
+                        </a>
+                    </div>
+                    <div class="col-xl-5 col-lg-8 col-6 d-flex align-items-center">
+                        <ul class="nav header__nav">
+                            <li><a href="">Нэвиол</a></li>
+                            <li><a href="">Продукция</a></li>
+                            <li><a href="">Дилерам</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                        <div class="ms-auto d-flex d-lg-none header__right-mob">
+                            <a href="tel:88003007801" class="header__right-mob__tel">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 5.19642C0 3.80506 0.524918 2.50547 1.52476 1.51437L2.39963 0.756404C3.40767 -0.251484 5.04101 -0.251484 6.04906 0.756404C6.07405 0.781397 7.61561 2.78897 7.61561 2.78897C8.57366 3.78046 8.57366 5.36317 7.61561 6.35466L6.64896 7.57107C7.86557 10.3284 9.75668 12.2278 12.4231 13.3611L13.6397 12.3864C14.6313 11.4367 16.2061 11.4367 17.2059 12.3864C17.2059 12.3864 19.2138 13.9277 19.2388 13.9527C20.2468 14.9606 20.2468 16.5936 19.2806 17.5597L18.4475 18.5177C17.4895 19.4756 16.1897 20.0004 14.7981 20.0004C8.44048 20 0 11.5694 0 5.20462V5.19642Z"
+                                              fill="#000"/>
+                                </svg>
+                            </a>
+
+                            <a href="#mobNav" class="header__right-mob__toggle" data-bs-target="#mobNav" data-bs-toggle="offcanvas">
+                                <svg width="30" height="20" viewBox="0 0 30 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+
+                                    <path d="M1.2498 8.74989H28.7496C29.4398 8.74989 29.9994 9.30947 29.9994 9.99971C29.9994 10.6899 29.4398 11.2495 28.7496 11.2495H1.2498C0.55957 11.2495 0 10.6899 0 9.99971C0 9.30947 0.55957 8.74989 1.2498 8.74989Z"
+                                          fill="#000"/>
+                                    <path d="M1.2498 0H28.7496C29.4398 0 29.9994 0.559576 29.9994 1.24982C29.9994 1.94006 29.4398 2.49963 28.7496 2.49963H1.2498C0.55957 2.50022 0 1.94064 0 1.24982C0 0.559576 0.55957 0 1.2498 0Z"
+                                          fill="#000"/>
+                                    <path d="M1.2498 17.5004H28.7496C29.4398 17.5004 29.9994 18.0599 29.9994 18.7502C29.9994 19.4404 29.4398 20 28.7496 20H1.2498C0.55957 20 0 19.4404 0 18.7502C0 18.0599 0.55957 17.5004 1.2498 17.5004Z"
+                                          fill="#000"/>
+
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 d-none d-xl-block">
+                        <div class="header__right">
+                            <a href="tel:88003007801" class="header__phone">8 800 300-78-01</a>
+                            <button class="btn btn--border2" data-bs-toggle="modal" data-bs-target="#telModal"><span>Заказать звонок</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="nav breadcrumbs__list">
+                <li>
+                    <a href="">Главная</a>
+                </li>
+                <li>
+                    <span><!--#echo var="title" --></span>
+                </li>
+            </ul>
+        </div>
+    </div>
