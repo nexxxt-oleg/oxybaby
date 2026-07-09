@@ -576,3 +576,144 @@ a {
   align-items: center;
   justify-content: center;
 }
+
+.brand-slide {
+  padding: 15px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  border-radius: 15px;
+  user-select: none;
+}
+
+#brandSlider {
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 50vw;
+    margin-left: 50px;
+    background: linear-gradient(90deg,rgba(241, 241, 241, 0) 0%, rgba(241, 241, 241, 1) 10%, rgba(241, 241, 241, 1) 100%);
+  }
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 100%;
+    height: 100%;
+    width: 50vw;
+    margin-right: 50px;
+    background: linear-gradient(-90deg,rgba(241, 241, 241, 0) 0%, rgba(241, 241, 241, 1) 10%, rgba(241, 241, 241, 1) 100%);
+  }
+}
+
+.footer {
+  background: #fff;
+  &__top {
+    display: flex;
+    align-items: center;
+    padding: 45px 0 40px;
+  }
+  &__logo {
+    min-width: 220px;
+  }
+  &__slogan {
+    color: #001e42;
+    font-size: 15px;
+    font-weight: 100;
+  }
+  &__middle {
+    padding: 25px 0 50px;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  &__nav {
+    li {
+      padding-bottom: 20px;
+    }
+    a {
+      display: block;
+      color: #001e42;
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: 300;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        color: #007ec7;
+      }
+    }
+  }
+}
+
+.fpad20 {
+  padding-bottom: 20px;
+}
+
+.footer__adr {
+  height: 100px;
+  color: #001e42;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.footer__link {
+  color: #001e42;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+.footer__oferta {
+  color: #001e42;
+  font-size: 15px;
+}
+.footer__bottom {
+  padding: 30px 0;
+}
+
+.footer__copy {
+  color: #001e42;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+.footer__web {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  &__ico {
+    min-width: 25px;
+  }
+  &__desc {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #001e42;
+  }
+  &__title {
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
+    color: #001e42;
+    display: block;
+  }
+  &:hover {
+    .footer__web__title {
+      color: #007ec7;
+    }
+  }
+}
+
+.header__left__mob {
+  display: none;
+}

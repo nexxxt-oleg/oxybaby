@@ -3,7 +3,7 @@
 <div class="home-slider">
     <div class="swiper " id="homeSlider" style="--progress:0%">
         <div class="swiper-wrapper">
-            <div class="swiper-slide ">
+            <div class="swiper-slide overflow-hidden">
                 <div class="container">
                     <div class="home-slider__item">
                         <div class="home-slider__item__desc">
@@ -22,7 +22,8 @@
                         </div>
                         <div class="home-slider__item__img" data-swiper-parallax-opacity="0.1">
                             <picture>
-                                <source srcset="images/dist/sl1.jpg 1x, images/dist/sl1@2.jpg 2x">
+                                <source media="(max-width: 768px)" srcset="images/dist/sl1_mob.jpg">
+                                <source media="(min-width: 769px)" srcset="images/dist/sl1.jpg 1x, images/dist/sl1@2.jpg 2x">
                                 <img src="images/dist/sl1.jpg" width="903" height="630" loading="lazy" alt="">
                             </picture>
                         </div>
@@ -30,7 +31,7 @@
                 </div>
             </div>
 
-            <div class="swiper-slide ">
+            <div class="swiper-slide overflow-hidden">
                 <div class="container">
                     <div class="home-slider__item">
                         <div class="home-slider__item__desc">
@@ -49,20 +50,21 @@
                         </div>
                         <div class="home-slider__item__img" data-swiper-parallax-opacity="0.1">
                             <picture>
-                                <source srcset="images/dist/sl1.jpg 1x, images/dist/sl1@2.jpg 2x">
+                                <source media="(max-width: 768px)" srcset="images/dist/sl1_mob.jpg">
+                                <source media="(min-width: 769px)" srcset="images/dist/sl1.jpg 1x, images/dist/sl1@2.jpg 2x">
                                 <img src="images/dist/sl1.jpg" width="903" height="630" loading="lazy" alt="">
                             </picture>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide ">
+            <div class="swiper-slide overflow-hidden">
                 <div class="container">
                     <div class="home-slider__item">
                         <div class="home-slider__item__desc">
                             <div class="home-slider__item__title" data-swiper-parallax="-300">
                                 Газоанализаторы
-                                <b>WITT Oxybaby®</b>
+                                <div><b>WITT Oxybaby®</b></div>
                             </div>
                             <div class="home-slider__item__text" data-swiper-parallax="-200">
                                 <p>Ультрасовременные беспроводные портативные газоанализаторы для контроля условий
@@ -75,7 +77,8 @@
                         </div>
                         <div class="home-slider__item__img" data-swiper-parallax-opacity="0.1">
                             <picture>
-                                <source srcset="images/dist/sl1.jpg 1x, images/dist/sl1@2.jpg 2x">
+                                <source media="(max-width: 768px)" srcset="images/dist/sl1_mob.jpg">
+                                <source media="(min-width: 769px)" srcset="images/dist/sl1.jpg 1x, images/dist/sl1@2.jpg 2x">
                                 <img src="images/dist/sl1.jpg" width="903" height="630" loading="lazy" alt="">
                             </picture>
                         </div>
@@ -499,7 +502,8 @@
                             Ваши измерения теперь эталонны.
                             <br>
                             <br>
-                            С калибровочным модулем <br>«Фёссен Файн Кит» стало возможным калибровать ваш Oxybaby® невероятно просто — в 4 шага, прямо у себя на производстве и так часто, как это необходимо.
+                            С калибровочным модулем <br>«Фёссен Файн Кит» стало возможным калибровать ваш Oxybaby®
+                            невероятно просто — в 4 шага, прямо у себя на производстве и так часто, как это необходимо.
                         </div>
                     </div>
                     <div class="cat-box__big-img">
@@ -585,6 +589,91 @@
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="row fpad30">
+        <div class="col-lg-6">
+            <h2 class="h2">Oxybaby® высоко оценен <br>на производствах</h2>
+        </div>
+        <div class="col-lg-6 fpad30 text">
+            <p>Переносные газоанализаторы Oxybaby® — самые популярные в мире газоанализаторы в пищевой промышленности,
+                что обусловлено компактной конструкцией, невероятной скоростью и точностью работы.</p>
+            <p>Благодаря компактной конструкции и небольшим размерам, переносные газоанализаторы WITT являются идеальным
+                оборудованием для измерения остаточной концентрации кислорода в упаковках с модифицированной газовой
+                средой или для технического обслуживания рабочих систем.</p>
+            <p>Простое управление и калибровка, длительный срок эксплуатации сенсоров, минимальное техническое
+                обслуживание и экономичность являются дополнительными преимуществами проверенных на практике переносных
+                газоанализаторов Oxybaby®</p>
+        </div>
+    </div>
+
+</div>
+<div class="fpad130 overflow-hidden position-relative">
+    <div class="container">
+        <div class="swiper overflow-visible" id="brandSlider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="brand-slide">
+                        <img src="images/dist/b1.jpg" width="130" height="19" loading="lazy" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brand-slide">
+                        <img src="images/dist/b2.jpg" width="80" height="97" loading="lazy" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brand-slide">
+                        <img src="images/dist/b3.jpg" width="130" height="40" loading="lazy" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brand-slide">
+                        <img src="images/dist/b4.jpg" width="130" height="69" loading="lazy" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brand-slide">
+                        <img src="images/dist/b5.jpg" width="134" height="95" loading="lazy" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brand-slide">
+                        <img src="images/dist/b6.jpg" width="112" height="112" loading="lazy" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brand-slide">
+                        <img src="images/dist/b1.jpg" width="130" height="19" loading="lazy" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brand-slide">
+                        <img src="images/dist/b2.jpg" width="80" height="97" loading="lazy" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brand-slide">
+                        <img src="images/dist/b3.jpg" width="130" height="40" loading="lazy" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brand-slide">
+                        <img src="images/dist/b4.jpg" width="130" height="69" loading="lazy" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brand-slide">
+                        <img src="images/dist/b5.jpg" width="134" height="95" loading="lazy" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brand-slide">
+                        <img src="images/dist/b6.jpg" width="112" height="112" loading="lazy" alt="">
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
