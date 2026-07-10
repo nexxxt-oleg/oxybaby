@@ -28,9 +28,24 @@
   .header__nav {
     padding-top: 15px;
   }
+  .fpad100 {
+    padding-bottom: 30px;
+  }
+  .fpad130 {
+    padding-bottom: 50px;
+  }
+  .fpad80 {
+    padding-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 991px) {
+  .fpad30 {
+    padding-bottom: 10px;
+  }
+  .h2 {
+    font-size: 24px;
+  }
   .home-slider__item__desc {
     width: 100%;
     padding-top: 0;
@@ -58,6 +73,14 @@
     display: inline-flex;
     align-items: center;
     margin-left: auto;
+    gap: 20px;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 20px;
+      width: 20px;
+    }
   }
   .header__left {
     display: flex;
@@ -74,7 +97,7 @@
     padding-bottom: 0;
     background: #f1f1f1;
     position: fixed;
-    z-index: 10;
+    z-index: 100;
     left: 0;
     top: 0;
     right: 0;
@@ -82,9 +105,185 @@
   .main {
     padding-top: 80px;
   }
+  .text h2.fs-42 {
+    font-size: 30px;
+  }
+  .footer__top {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+  }
+  .footer__logo {
+    display: block;
+    width: 92px;
+    min-width: 92px;
+    margin: 0 auto 15px;
+  }
+  .footer__middle {
+    padding: 15px 0;
+    text-align: center;
+  }
+  .footer__adr {
+    height: auto;
+    padding-bottom: 15px;
+  }
+  .footer__bottom {
+    padding: 15px 0;
+    text-align: center;
+  }
+  .footer__web {
+    margin: 15px auto;
+    width: 185px;
+  }
+  .footer__oferta {
+    padding-top: 15px;
+  }
+  .header__mob-nav-top {
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid #d7d7d8;
+  }
+  #mobNav {
+    border-bottom: none;
+    --bs-offcanvas-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .header__nav__list {
+    display: block;
+    padding: 15px 0;
+  }
+  .header__mob-nav-footer {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .footer__adr {
+    padding-bottom: 10px;
+  }
+  .btn {
+    min-height: 48px;
+    height: auto;
+  }
+
+  .product-card__title.fs-24 {
+    font-size: 18px;
+  }
+  .cat-box--min {
+    min-height: 270px;
+  }
+  .product-card__text.fs-16 {
+    font-size: 14px;
+  }
+  .pdf-link {
+    align-items: flex-start;
+    font-size: 14px;
+    span {
+      min-height: 36px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .hr-line {
+    margin: 20px 0;
+  }
+  .fpad60 {
+    padding-bottom: 20px;
+  }
+  .banner-box__img-footer{
+    img {
+      max-width: 130px;
+    }
+  }
+  .banner-box__img-top {
+    img {
+      max-width: 60px;
+      height: auto;
+    }
+  }
+  .banner-box--n1 {
+    background-image: url("../images/dist/banner1_mob.jpg");
+    background-position: 50% 100%;
+    min-height: 352px !important;
+  }
+  .full-banner {
+    padding: 30px 30px 0 30px;
+  }
+  .text h2,
+  .text h2.fs-42 {
+    font-size: 20px;
+  }
+  .banner-box {
+    padding: 30px;
+    min-height: 300px;
+  }
+  .js-slider-product {
+    .swiper-slide {
+      width: 220px;
+    }
+  }
+  .product-card__img {
+    height: 190px;
+  }
+  .product-card {
+    padding: 20px;
+  }
+  .cat-box__link {
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .product-card__title,
+  .header__email {
+    font-size: 16px;
+  }
+  .header__phone {
+    font-size: 18px;
+  }
+  .banner-box__wrap p,
+  .text p,
+  .text li,
+  .footer__slogan,
+  .footer__adr,
+  .footer__link,
+  .footer__oferta,
+  .btn {
+    font-size: 14px;
+  }
+  .product-card__text,
+  .header__work-time,
+  .footer__copy,
+  .footer__web__desc {
+    font-size: 12px;
+  }
+  .footer__web {
+    width: 170px;
+  }
+  .product-card__price,
+  .banner-box__wrap h3 {
+    font-size: 20px;
+  }
+  .product-card__footer {
+    font-size: 16px;
+  }
+  .swiper__nav {
+    display: none;
+  }
+  .cat-box {
+    padding: 25px;
+    &__title {
+      height: auto;
+      padding-bottom: 20px;
+      font-size: 18px;
+    }
+    &__img {
+      height: 150px;
+    }
+  }
   .home-slider__item__text p {
     font-size: 16px;
     margin-bottom: 15px;
@@ -114,5 +313,24 @@
   }
   .home-slider__item__title b, .home-slider__item__title div {
     font-size: 30px;
+  }
+  .fpad130 {
+    padding-bottom: 30px;
+  }
+  .fpad100 {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  #brandSlider:after {
+    margin-left: 80px;
+  }
+  #brandSlider:before {
+    margin-right: 80px;
+  }
+  #brandSlider {
+    width: 142px;
+    margin: 0 auto;
   }
 }

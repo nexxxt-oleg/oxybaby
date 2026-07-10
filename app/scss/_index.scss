@@ -714,6 +714,12 @@ a {
   }
 }
 
-.header__left__mob {
+.header__left__mob,
+.header__mob-nav-footer,
+.header__mob-nav-top {
   display: none;
+}
+
+.tpad20 {
+  padding-top: 20px;
 }
