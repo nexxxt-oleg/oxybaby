@@ -161,6 +161,24 @@
 }
 
 @media screen and (max-width: 768px) {
+  .cookie__wrap {
+    display: block !important;
+    padding: 18px 30px 20px 62px;
+  }
+  .cookie__ico {
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    width: 24px;
+    z-index: 1;
+  }
+  .cookie__text {
+    font-size: 12px;
+    padding: 0 0 15px;
+  }
+  .cookie__btn {
+    max-width: 150px;
+  }
   .footer__adr {
     padding-bottom: 10px;
   }
