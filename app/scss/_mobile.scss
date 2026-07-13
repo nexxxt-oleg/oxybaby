@@ -53,6 +53,25 @@
 }
 
 @media screen and (max-width: 991px) {
+  .modal-dialog {
+    width: 400px;
+    max-width: 400px;
+  }
+  .form-submit .btn {
+    height: 48px;
+    font-size: 15px;
+    min-width: 160px;
+  }
+  .modal-dialog .modal-content {
+    padding: 30px 30px 40px;
+    width: 400px;
+  }
+  .modal-dialog .modal-content__title {
+    font-size: 24px;
+  }
+  .single-product__price {
+    font-size: 18px;
+  }
   .single-product__info__group {
     display: block;
   }
@@ -462,6 +481,22 @@
     .btn {
       width: 100%;
     }
+  }
+  .modal-dialog .modal-content {
+    padding: 30px 15px;
+  }
+  .modal-dialog .modal-content,
+  .modal-dialog {
+    max-width: 300px;
+    width: 300px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .form-checkbox__text {
+    font-size: 13px;
+  }
+  .modal-dialog .modal-content__title {
+    font-size: 20px;
   }
 }
 

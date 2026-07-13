@@ -588,7 +588,7 @@
                         <p>— устранение любых других неисправностей и замена деталей с последующей гарантией на
                             проделанные работы</p>
                     </div>
-                    <a href="" class="btn btn--blue"><span>Оставить заявку</span></a>
+                    <a href="#telModal" class="btn btn--blue" data-bs-toggle="modal" data-bs-target="#telModal"><span>Оставить заявку</span></a>
                 </div>
                 <div class="col-12">
                     <div class="d-flex justify-content-center d-xl-none pt-3">
@@ -927,49 +927,8 @@
         </div>
     </div>
 </footer>
-<div class="modal fade" id="telModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
 
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.199 12.0004L23.5444 2.65467C24.1528 2.04699 24.1528 1.06362 23.5444 0.455942C22.9368 -0.151736 21.9534 -0.151736 21.3458 0.455942L12.0004 9.80164L2.65495 0.455942C2.04729 -0.151736 1.06468 -0.151736 0.456292 0.455942C-0.152097 1.06362 -0.152097 2.04699 0.456292 2.65467L9.8017 12.0004L0.456292 21.3461C-0.152097 21.9537 -0.152097 22.9371 0.456292 23.5448C0.759027 23.8483 1.15733 24 1.55562 24C1.95392 24 2.35149 23.8475 2.65495 23.5448L12.0004 14.1991L21.3458 23.5448C21.6492 23.8483 22.0468 24 22.4451 24C22.8434 24 23.241 23.8475 23.5444 23.5448C24.1528 22.9371 24.1528 21.9537 23.5444 21.3461L14.199 12.0004Z"
-                          fill="white"/>
-                </svg>
-            </button>
-            <div class="modal-content__title">Заказать звонок</div>
-            <div class="modal-content__sub-title">Пожалуйста, заполните все поля.</div>
-            <form action="" id="telModalForm">
-                <div class="form-inp">
-                    <input id="telModalFIO" type="text" class="form-inp__val" placeholder="Ваше Имя и Фамилия *"
-                           name="fio" required>
-                </div>
-                <div class="form-inp">
-                    <input id="telModalTel" type="tel" class="form-inp__val js-mask-phone"
-                           placeholder="Контактный телефон *" name="tel" required>
-                </div>
-                <div class="form-inp">
-                    <input type="email" class="form-inp__val" placeholder="Email" name="email">
-                </div>
-                <div class="form-politic">
-                    <label class="form-checkbox">
-                        <input id="telModalPolitika" type="checkbox" name="politica" value="1" checked>
-                        <span class="form-checkbox__text">
-                            Нажимая на кнопку «Отправить», вы подтверждаете свое согласие с
-                            <a href="" class="text-nowrap" target="_blank">Политикой конфиденциальности</a>
-                        </span>
-                    </label>
-                    <div id="telModalPolitikaError"></div>
-                </div>
-                <div class="form-submit">
-                    <button class="btn btn--blue" type="submit"><span>Отправить</span></button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="successModal" tabindex="-1"  aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
 
@@ -980,8 +939,8 @@
                 </svg>
             </button>
             <div class="modal-content__title tpad50">Ваша заявка успешно отправлена</div>
-            <div class="modal-content__sub-title">В течении ближайшего времени, с вами свяжется наш менеджер!</div>
-            <div class="form-submit fpad50">
+            <div class="modal-content__sub-title">Наш менеджер свяжется с вами <br>в ближайшее время.</div>
+            <div class="form-submit ">
                 <button data-bs-dismiss="modal" class="btn btn--blue" type="submit"><span>Закрыть</span></button>
             </div>
         </div>
@@ -1045,6 +1004,144 @@
     </div>
 </div>
 
+<div class="modal fade" id="telModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14">
+                    <use xlink:href="#svg-close"></use>
+                </svg>
+            </button>
+            <div class="modal-content__title">Обратная связь</div>
+
+            <form action="" id="telModalForm">
+                <div class="form-inp">
+                    <input id="telModalFIO" type="text" class="form-inp__val" placeholder="Ваше Имя*"
+                           name="fio" required>
+                </div>
+                <div class="form-inp">
+                    <input id="telModalTel" type="tel" class="form-inp__val js-mask-phone"
+                           placeholder="Контактный телефон *" name="tel" required>
+                </div>
+                <div class="form-inp">
+                    <input type="email" class="form-inp__val" placeholder="Email" name="email">
+                </div>
+                <div class="form-inp">
+                    <input type="text" class="form-inp__val" placeholder="Название компании" name="company">
+                </div>
+                <div class="form-inp">
+                    <textarea class="form-inp__val" placeholder="Комментарий"></textarea>
+                </div>
+                <div class="form-politic">
+                    <label class="form-checkbox">
+                        <input id="telModalPolitika" type="checkbox" name="politica" value="1" checked>
+                        <span class="form-checkbox__text">
+                            Оставляя заявку, вы соглашаетесь с
+                            <a href=""  target="_blank">Политикой конфиденциальности</a>
+                        </span>
+                    </label>
+                    <div id="telModalPolitikaError"></div>
+                </div>
+                <div class="form-submit">
+                    <button class="btn btn--blue" type="submit"><span>Оставить заявку</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14">
+                    <use xlink:href="#svg-close"></use>
+                </svg>
+            </button>
+            <div class="modal-content__title">Оставить заявку</div>
+
+            <form action="" id="orderModalForm">
+                <div class="form-inp">
+                    <input id="orderModalFIO" type="text" class="form-inp__val" placeholder="Ваше Имя*"
+                           name="fio" required>
+                </div>
+                <div class="form-inp">
+                    <input id="orderModalTel" type="tel" class="form-inp__val js-mask-phone"
+                           placeholder="Контактный телефон *" name="tel" required>
+                </div>
+                <div class="form-inp">
+                    <input type="email" class="form-inp__val" placeholder="Email" name="email">
+                </div>
+                <div class="form-inp">
+                    <input type="text" class="form-inp__val" placeholder="Название компании" name="company">
+                </div>
+                <div class="form-inp">
+                    <textarea class="form-inp__val" placeholder="Комментарий"></textarea>
+                </div>
+                <div class="form-politic">
+                    <label class="form-checkbox">
+                        <input id="orderModalPolitika" type="checkbox" name="politica" value="1" checked>
+                        <span class="form-checkbox__text">
+                            Оставляя заявку, вы соглашаетесь с
+                            <a href=""  target="_blank">Политикой конфиденциальности</a>
+                        </span>
+                    </label>
+                    <div id="orderModalPolitikaError"></div>
+                </div>
+                <div class="form-submit">
+                    <button class="btn btn--blue" type="submit"><span>Оставить заявку</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="consultationModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14">
+                    <use xlink:href="#svg-close"></use>
+                </svg>
+            </button>
+            <div class="modal-content__title">Оставить заявку</div>
+
+            <form action="" id="consultationModalForm">
+                <div class="form-inp">
+                    <input id="consultationModalFIO" type="text" class="form-inp__val" placeholder="Ваше Имя*"
+                           name="fio" required>
+                </div>
+                <div class="form-inp">
+                    <input id="consultationModalTel" type="tel" class="form-inp__val js-mask-phone"
+                           placeholder="Контактный телефон *" name="tel" required>
+                </div>
+                <div class="form-inp">
+                    <input type="email" class="form-inp__val" placeholder="Email" name="email">
+                </div>
+                <div class="form-inp">
+                    <input type="text" class="form-inp__val" placeholder="Название компании" name="company">
+                </div>
+                <div class="form-inp">
+                    <textarea class="form-inp__val" placeholder="Комментарий"></textarea>
+                </div>
+                <div class="form-politic">
+                    <label class="form-checkbox">
+                        <input id="consultationModalPolitika" type="checkbox" name="politica" value="1" checked>
+                        <span class="form-checkbox__text">
+                            Оставляя заявку, вы соглашаетесь с
+                            <a href=""  target="_blank">Политикой конфиденциальности</a>
+                        </span>
+                    </label>
+                    <div id="consultationModalPolitikaError"></div>
+                </div>
+                <div class="form-submit">
+                    <button class="btn btn--blue" type="submit"><span>Оставить заявку</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <div style="display: none">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
