@@ -813,3 +813,36 @@ a {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+.page-nav {
+  li {
+    padding-bottom: 10px;
+    a {
+      display: flex;
+      align-items: center;
+      position: relative;
+      transition: all 0.2s ease-in-out;
+      min-height: 65px;
+      padding: 5px 40px 5px 25px;
+      border-radius: 10px;
+      background-color: #f8f8f8;
+      color: #001e42;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 400;
+      background-position: right 20px top 50%;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 170.75 297.48'%3E%3Cpath fill='%23001e42' d='M170.75,148.06c.03,5.67-2.19,11.12-6.19,15.15L36.57,291.21c-8.37,8.37-21.93,8.37-30.29,0s-8.37-21.93,0-30.29l113.07-112.85L6.49,35.21C-1.18,26.26-.13,12.79,8.81,5.13c7.99-6.84,19.77-6.84,27.75,0l128,128c3.94,3.97,6.16,9.34,6.19,14.93h0Z'/%3E%3C/svg%3E");
+      background-size: 5px 8px;
+      &:hover {
+        background-color: #fff;
+        color: #007ec7;
+      }
+
+      &.active {
+        background-color: #fff;
+        color: #007ec7;
+      }
+    }
+  }
+}
