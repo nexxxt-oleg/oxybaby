@@ -1,4 +1,11 @@
 @media screen and (max-width: 1199px) {
+  .single-product__photos__col-big {
+
+    width: calc(100% - 100px);
+  }
+  .single-product__info {
+    padding: 30px;
+  }
   .header__slogan {
     font-size: 13px;
 
@@ -46,6 +53,30 @@
 }
 
 @media screen and (max-width: 991px) {
+  .single-product__info__group {
+    display: block;
+  }
+  .single-product__photos {
+    display: block;
+    .single-product__photos__col-min {
+      display: none;
+    }
+    .single-product__photos__col-big {
+      width: 100%;
+    }
+  }
+  .single-product__img {
+    height: 400px;
+    padding: 15px;
+    img {
+      width: 100%;
+      height: 370px;
+      object-fit: contain;
+    }
+  }
+  .single-product__docs {
+    padding-bottom: 30px;
+  }
   .page-nav li a {
     padding-left: 15px;
     min-height: 50px;
@@ -190,6 +221,43 @@
 }
 
 @media screen and (max-width: 768px) {
+  .single-product__info__group:not(:last-child) {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+  .single-product__title {
+    font-size: 24px !important;
+  }
+  .single-product__anons {
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    p {
+      font-size: 16px;
+    }
+  }
+  .single-product__info__caption {
+    min-width: 100%;
+    width: 100%;
+    font-size: 20px;
+  }
+  .single-product__info {
+    margin-bottom: 30px;
+  }
+  .text ul li {
+    padding-left: 20px;
+  }
+  .text ul li:after {
+    top: 7px;
+  }
+  .alert-info {
+    font-size: 12px;
+  }
+  .single-product__price {
+    padding-bottom: 15px;
+  }
+  .single-product__price .product-card__price {
+    font-size: 24px;
+  }
   .page-title h1 {
     font-size: 36px;
     padding-bottom: 20px;
@@ -375,6 +443,25 @@
 @media screen and (max-width: 574px) {
   .page-title h1 {
     font-size: 24px;
+  }
+  .single-product__img {
+    height: 250px;
+    img {
+      height: 220px;
+    }
+  }
+  .single-product__photos__col-big .product-card__badge span {
+    display: none;
+  }
+  .single-product__info {
+    padding: 20px;
+  }
+  .single-product__btns {
+   flex-wrap: wrap;
+    gap: 10px;
+    .btn {
+      width: 100%;
+    }
   }
 }
 
