@@ -53,6 +53,10 @@
 }
 
 @media screen and (max-width: 991px) {
+  .header__nav__list a,
+  .header__slogan {
+    text-align: center;
+  }
   .modal-dialog {
     width: 400px;
     max-width: 400px;
