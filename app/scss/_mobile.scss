@@ -240,6 +240,16 @@
 }
 
 @media screen and (max-width: 768px) {
+  .articles__img {
+    height: 200px;
+  }
+  .articles__title{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .articles__anons {
+    font-size: 13px;
+  }
   .single-product__info__group:not(:last-child) {
     padding-bottom: 15px;
     margin-bottom: 20px;
@@ -458,8 +468,33 @@
   .fpad100 {
     padding-bottom: 20px;
   }
+  .text h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 574px) {
+  .page-404 {
+    padding: 30px 0 50px;
+  }
+  .page-404__title {
+    font-size: 100px !important;
+  }
+  .page-404__caption {
+    font-size: 20px;
+    margin-top: -20px;
+  }
+  .art-image {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+    img {
+      border-radius: 10px;
+    }
+  }
+  .articles__img {
+    height: 160px;
+  }
   .page-title h1 {
     font-size: 24px;
   }

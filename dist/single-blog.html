@@ -1,0 +1,521 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>блог</title>
+    <meta name="description" content="">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+<body>
+<div class="main" id="top">
+
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-4 col-12 header__left">
+                        <a href="/" class="header__logo">
+                            <img src="images/dist/logo.svg" loading="lazy" width="150" height="50" alt="">
+                        </a>
+                        <div class="header__left__mob">
+                            <a href="tel:911">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
+                                    <path fill="#001e42"
+                                          d="M464.56,345.5c-.85-.7-96.67-69.28-122.67-64.78-12.5,2.21-19.65,10.72-33.97,27.79-2.3,2.75-7.86,9.33-12.14,14.02-9.05-2.95-17.88-6.54-26.42-10.75-44.07-21.46-79.68-57.06-101.14-101.14-4.21-8.54-7.8-17.37-10.75-26.42,4.7-4.3,11.3-9.86,14.11-12.22,16.98-14.24,25.49-21.39,27.7-33.9,4.53-25.9-64.08-121.81-64.78-122.67-6.33-8.97-16.35-14.63-27.3-15.42C79.39,0,0,102.98,0,120.34c0,1.01,1.46,103.47,127.81,232,128.38,126.21,230.85,127.66,231.86,127.66,17.36,0,120.34-79.39,120.34-107.2-.79-10.95-6.46-20.98-15.44-27.3ZM357.9,447.9c-13.98-1.15-99.97-12.5-207.47-118.11C44.27,221.71,33.22,135.49,32.11,122.13c20.97-32.92,46.3-62.85,75.3-88.98.64.64,1.49,1.6,2.58,2.85,22.24,30.36,41.39,62.85,57.18,97.01-5.14,5.17-10.56,10.03-16.26,14.58-8.83,6.73-16.94,14.35-24.19,22.75l-3.89,5.44,1.15,6.58c3.39,14.67,8.57,28.86,15.44,42.26,24.61,50.53,65.44,91.35,115.97,115.95,13.39,6.88,27.59,12.07,42.26,15.46l6.58,1.15,5.44-3.89c8.43-7.29,16.09-15.43,22.85-24.29,5.01-5.98,11.71-13.97,14.24-16.22,34.25,15.78,66.83,34.95,97.25,57.25,1.33,1.12,2.26,1.98,2.88,2.54-26.12,29-56.05,54.34-88.98,75.31v.03Z"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:11@11.ru">
+                                <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 384">
+                                    <path fill="#001e42"
+                                          d="M420.98,0H59.02C26.44.04.04,26.44,0,59.02v265.95c.04,32.58,26.44,58.99,59.02,59.02h361.95c32.58-.04,58.99-26.44,59.02-59.02V59.02c-.04-32.58-26.44-58.99-59.02-59.02ZM59.02,32h361.95c14.92.02,27.01,12.11,27.02,27.02v12.24l-208,133.71L32,71.26v-12.24c.02-14.92,12.11-27.01,27.02-27.02ZM420.98,352H59.02c-14.92-.02-27.01-12.11-27.02-27.02V109.31l199.34,128.14c5.27,3.39,12.04,3.39,17.31,0l199.34-128.14v215.66c-.02,14.92-12.11,27.01-27.02,27.02Z"/>
+                                </svg>
+                            </a>
+                            <a href="#mobNav" data-bs-toggle="offcanvas">
+                                <svg width="20" height="14" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 512 352">
+                                    <path fill="#001e42"
+                                          d="M496,32H16C7.16,32,0,24.84,0,16S7.16,0,16,0h480c8.84,0,16,7.16,16,16s-7.16,16-16,16Z"/>
+                                    <path fill="#001e42"
+                                          d="M496,192H16c-8.84,0-16-7.16-16-16s7.16-16,16-16h480c8.84,0,16,7.16,16,16s-7.16,16-16,16Z"/>
+                                    <path fill="#001e42"
+                                          d="M496,352H16c-8.84,0-16-7.16-16-16s7.16-16,16-16h480c8.84,0,16,7.16,16,16s-7.16,16-16,16Z"/>
+
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-8 col-6 header__right">
+                        <div class="header__phone-col">
+                            <a href="tel:+74991120707" class="header__phone">+7 (499) 112-07-07</a>
+                            <div class="header__work-time">с 09:00 до 18:00 по МСК</div>
+                        </div>
+                        <a href="mailto:witt@oxybaby.ru" class="header__email">witt@oxybaby.ru</a>
+                        <button class="btn btn--blue" data-bs-toggle="modal" data-bs-target="#telModal"><span>Заказать звонок</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-lg offcanvas-top" id="mobNav" tabindex="-1">
+            <div class="header__mob-nav-top">
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="header__logo">
+                            <img src="images/dist/logo.svg" loading="lazy" width="90" height="30" alt="">
+                        </div>
+                        <button data-bs-target="#mobNav" data-bs-toggle="offcanvas" class="header__mob-nav-close btn-close">
+                            <svg width="14" height="14">
+                                <use xlink:href="#svg-close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header__nav row">
+                    <div class="col-xl-6 col-lg-4 col-12">
+                        <div class="header__slogan">
+                            Оборудование WITT для контроля газовой среды,<br>
+                            смешивания газов и проверки упаковки.
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-8 col-12">
+                        <ul class="nav header__nav__list">
+                            <li><a href="">Главная</a></li>
+                            <li><a href="">Каталог</a></li>
+                            <li><a href="">Сервис</a></li>
+                            <li><a href="">О компании</a></li>
+                            <li><a href="">Блог</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="header__mob-nav-footer">
+                    <div class="fpad30">
+                        <a class="header__phone" href="tel:+7 4991120707">+7 (499) 112-07-07</a>
+                        <div class="header__work-time">с 09:00 до 18:00 по МСК</div>
+                    </div>
+                    <div class="fpad30">
+                        <a href="mailto:witt@oxybaby.ru" class="header__email">witt@oxybaby.ru</a>
+                    </div>
+                    <div class="footer__adr">
+                        115230, Москва, <span class="text-nowrap">Электролитный проезд, д7, пом. 43К</span>
+                    </div>
+                    <div class="fpad30">
+                    <a href="" class="footer__link">Реквизиты компании</a>
+                    </div>
+                    <div class="fpad60 d-flex justify-content-center">
+                        <button class="btn btn--blue" data-bs-toggle="modal" data-bs-target="#telModal">
+                            <span>Заказать звонок</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+<div class="container">
+    <div class="breadcrumb">
+        <ul class="nav">
+            <li><a href="/">Главная</a></li>
+            <li>Блог</li>
+        </ul>
+    </div>
+
+    <div class="fpad100">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-9 ">
+                <div class="page-title">
+                    <h1 class="single-product__title">Компания WITT приобрела технологию Contura у компании INFICON</h1>
+                </div>
+                <div class="art-image">
+                    <picture>
+                        <source media="(min-width: 768px)"
+                                srcset="images/dist/art2.jpg 1x, images/dist/art2@2.jpg 2x">
+                        <img src="images/dist/art2.jpg" width="954" height="500" loading="lazy"
+                             alt="">
+                    </picture>
+                </div>
+                <div class="text">
+                    <p>С 1 июля 2026 года компания WITT Gasetechnik GmbH & Co. KG приобретает у компании INFICON GmbH известную линейку продуктов Contura для неразрушающего контроля герметичности упаковок. Это стратегическое приобретение также включает в себя соответствующие патенты и основано на взаимно согласованном соглашении, которое обеспечивает плавный переход для существующих клиентов, а также последовательное технологическое развитие систем.</p>
+                    <p>В рамках стратегической переориентации компания INFICON уходит с рынка контроля упаковки и сознательно выбрала компанию WITT в качестве своего преемника, чтобы обеспечить будущее технологии Contura в надежных руках. Благодаря интеграции технологии Contura компания WITT значительно расширяет свой ассортимент решений для проверки герметичности. Семейное предприятие, управляемое владельцами и расположенное в Виттене, на протяжении десятилетий специализируется на решениях для пищевой и упаковочной промышленности и является одним из ведущих мировых поставщиков систем для упаковки в модифицированной атмосфере (MAP), анализа газов и проверки герметичности. После приобретения компания WITT возьмет на себя полную ответственность за разработку, маркетинг, обслуживание и дальнейшее развитие существующих систем Contura.</p>
+                    <p>«На протяжении многих лет линейка продуктов Contura является синонимом точного и надежного контроля герметичности. Для нас было важно передать эту технологию партнеру, который сможет обеспечить клиентам долгосрочную стабильность и продолжить развитие продукта, опираясь на свой технический опыт», — говорит д-р Хорхе Оверманн, менеджер по продуктам в области инструментов для контроля герметичности компании INFICON.</p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <a href="/" class="footer__logo">
+                <img src="images/dist/logo.svg" loading="lazy" width="150" height="50" alt="">
+            </a>
+            <div class="footer__slogan">Официальный дистрибьютор <span class="text-nowrap">WITT в России и СНГ</span></div>
+        </div>
+        <div class="footer__middle">
+            <div class="row">
+                <div class="col-lg-4 col-xl-4 d-none d-lg-block">
+                    <ul class="nav d-block footer__nav">
+                        <li>
+                            <a href="">Главная</a>
+                        </li>
+                        <li>
+                            <a href="">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="">Сервис</a>
+                        </li>
+                        <li>
+                            <a href=""> О компании</a>
+                        </li>
+                        <li>
+                            <a href="">Блог</a>
+                        </li>
+                        <li>
+                            <a href="">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-xl-5">
+                    <div class="fpad30">
+                        <a class="header__phone" href="tel:+7 4991120707">+7 (499) 112-07-07</a>
+                        <div class="header__work-time">с 09:00 до 18:00 по МСК</div>
+                    </div>
+                    <div class="fpad30">
+                        <a href="mailto:witt@oxybaby.ru" class="header__email">witt@oxybaby.ru</a>
+                    </div>
+                    <div class="footer__adr">
+                        115230, Москва, <span class="text-nowrap">Электролитный проезд, д7, пом. 43К</span>
+                    </div>
+                    <a href="" class="footer__link">Реквизиты компании</a>
+                </div>
+                <div class="col-lg-4 col-xl-3">
+                    <div class="footer__oferta">
+                        Цены на сайте не является публичной офертой, может варьироваться в зависимости от курса валют и прочих условий. Актуальную цену уточняйте в отделе продаж.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-xl-4">
+                    <div class="footer__copy">© ООО «Пакмер», 2026, Все права защищены</div>
+                </div>
+                <div class="col-lg-4 col-xl-5">
+                    <a href="" target="_blank" class="footer__web">
+                        <div class="footer__web__ico">
+                            <svg width="25" height="28" viewBox="0 0 25 28" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.2205 3.52215H5.84793L0 0V24.9952V25.0377H0.142459L11.9238 28H12.1375L23.9188 25.0377H24.0613V25.0023V0L18.2133 3.52215H18.2205ZM11.938 24.4282L0.961596 21.4305V4.47887H0.975841V1.7221L5.54876 4.47887H18.5125L23.0854 1.7221V4.47887H23.0997V21.4305L12.0734 24.4282C12.0235 24.4282 11.9808 24.4282 11.9309 24.4282H11.938Z"
+                                      fill="#001e42"/>
+                                <path d="M14.424 16.4062H14.4098H12.0165H9.64453L12.0165 18.7662V18.7803L12.0236 18.7732L12.0307 18.7803L14.424 16.4062Z"
+                                      fill="#001e42"/>
+                            </svg>
+                        </div>
+                        <div class="footer__web__desc">
+                            Разработка сайта —
+                            <span class="footer__web__title">Котиков Consulting</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-xl-3">
+                    <a href="" class="footer__link">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="successModal" tabindex="-1"  aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.199 12.0004L23.5444 2.65467C24.1528 2.04699 24.1528 1.06362 23.5444 0.455942C22.9368 -0.151736 21.9534 -0.151736 21.3458 0.455942L12.0004 9.80164L2.65495 0.455942C2.04729 -0.151736 1.06468 -0.151736 0.456292 0.455942C-0.152097 1.06362 -0.152097 2.04699 0.456292 2.65467L9.8017 12.0004L0.456292 21.3461C-0.152097 21.9537 -0.152097 22.9371 0.456292 23.5448C0.759027 23.8483 1.15733 24 1.55562 24C1.95392 24 2.35149 23.8475 2.65495 23.5448L12.0004 14.1991L21.3458 23.5448C21.6492 23.8483 22.0468 24 22.4451 24C22.8434 24 23.241 23.8475 23.5444 23.5448C24.1528 22.9371 24.1528 21.9537 23.5444 21.3461L14.199 12.0004Z"
+                          fill="white"/>
+                </svg>
+            </button>
+            <div class="modal-content__title tpad50">Ваша заявка успешно отправлена</div>
+            <div class="modal-content__sub-title">Наш менеджер свяжется с вами <br>в ближайшее время.</div>
+            <div class="form-submit ">
+                <button data-bs-dismiss="modal" class="btn btn--blue" type="submit"><span>Закрыть</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-top" id="mobNav">
+    <div class="container">
+        <div class="offcanvas-header">
+            <a href="/">
+                <img src="images/dist/logo.svg" loading="lazy" width="98" height="17" alt="">
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.8322 10.0003L19.6201 2.21223C20.1271 1.70583 20.1271 0.88635 19.6201 0.379951C19.1137 -0.126447 18.2942 -0.126447 17.7878 0.379951L10 8.16803L2.21216 0.379951C1.70577 -0.126447 0.886929 -0.126447 0.379938 0.379951C-0.127053 0.88635 -0.127053 1.70583 0.379938 2.21223L8.16778 10.0003L0.379938 17.7884C-0.127053 18.2948 -0.127053 19.1143 0.379938 19.6207C0.632218 19.8736 0.964133 20 1.29605 20C1.62796 20 1.95927 19.8729 2.21216 19.6207L10 11.8326L17.7878 19.6207C18.0407 19.8736 18.372 20 18.704 20C19.0359 20 19.3672 19.8729 19.6201 19.6207C20.1271 19.1143 20.1271 18.2948 19.6201 17.7884L11.8322 10.0003Z"
+                          fill="black"/>
+                </svg>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav mob-nav">
+                <li>
+                    <a href="#mob1" class="collapsed mob-nav__dropdown" data-bs-toggle="collapse"
+                       data-bs-target="#mob1">
+                        <span>Продукция</span>
+                        <svg width="12" height="7">
+                            <use xlink:href="#svg-down"></use>
+                        </svg>
+                    </a>
+                    <div class="accordion-collapse collapse" id="mob1">
+                        <ul class="nav mob-nav__sub-menu">
+                            <li><a href="">Фордек – 124</a></li>
+                            <li><a href="">Тележка для чистого белья</a></li>
+                            <li><a href="">Тележка для мокрого белья</a></li>
+                            <li><a href="">Стеллаж</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">О компании</a>
+                </li>
+                <li>
+                    <a href="">Нэвиол в СМИ</a>
+                </li>
+                <li>
+                    <a href="">Дилерам</a>
+                </li>
+                <li>
+                    <a href="">Контакты</a>
+                </li>
+            </ul>
+
+            <a href="tel:88003007801" class="mob-nav-phone">8 800 300-78-01</a>
+            <a href="mailto:info@neviol.ru" class="mob-nav-email">info@neviol.ru</a>
+            <button class="btn btn--border2 mob-nav-btn" data-bs-toggle="modal" data-bs-target="#telModal"><span>Заказать звонок</span>
+            </button>
+            <div class="mob-nav-footer">
+                <a href="">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="telModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14">
+                    <use xlink:href="#svg-close"></use>
+                </svg>
+            </button>
+            <div class="modal-content__title">Обратная связь</div>
+
+            <form action="" id="telModalForm">
+                <div class="form-inp">
+                    <input id="telModalFIO" type="text" class="form-inp__val" placeholder="Ваше Имя*"
+                           name="fio" required>
+                </div>
+                <div class="form-inp">
+                    <input id="telModalTel" type="tel" class="form-inp__val js-mask-phone"
+                           placeholder="Контактный телефон *" name="tel" required>
+                </div>
+                <div class="form-inp">
+                    <input type="email" class="form-inp__val" placeholder="Email" name="email">
+                </div>
+                <div class="form-inp">
+                    <input type="text" class="form-inp__val" placeholder="Название компании" name="company">
+                </div>
+                <div class="form-inp">
+                    <textarea class="form-inp__val" placeholder="Комментарий"></textarea>
+                </div>
+                <div class="form-politic">
+                    <label class="form-checkbox">
+                        <input id="telModalPolitika" type="checkbox" name="politica" value="1" checked>
+                        <span class="form-checkbox__text">
+                            Оставляя заявку, вы соглашаетесь с
+                            <a href=""  target="_blank">Политикой конфиденциальности</a>
+                        </span>
+                    </label>
+                    <div id="telModalPolitikaError"></div>
+                </div>
+                <div class="form-submit">
+                    <button class="btn btn--blue" type="submit"><span>Оставить заявку</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14">
+                    <use xlink:href="#svg-close"></use>
+                </svg>
+            </button>
+            <div class="modal-content__title">Оставить заявку</div>
+
+            <form action="" id="orderModalForm">
+                <div class="form-inp">
+                    <input id="orderModalFIO" type="text" class="form-inp__val" placeholder="Ваше Имя*"
+                           name="fio" required>
+                </div>
+                <div class="form-inp">
+                    <input id="orderModalTel" type="tel" class="form-inp__val js-mask-phone"
+                           placeholder="Контактный телефон *" name="tel" required>
+                </div>
+                <div class="form-inp">
+                    <input type="email" class="form-inp__val" placeholder="Email" name="email">
+                </div>
+                <div class="form-inp">
+                    <input type="text" class="form-inp__val" placeholder="Название компании" name="company">
+                </div>
+                <div class="form-inp">
+                    <textarea class="form-inp__val" placeholder="Комментарий"></textarea>
+                </div>
+                <div class="form-politic">
+                    <label class="form-checkbox">
+                        <input id="orderModalPolitika" type="checkbox" name="politica" value="1" checked>
+                        <span class="form-checkbox__text">
+                            Оставляя заявку, вы соглашаетесь с
+                            <a href=""  target="_blank">Политикой конфиденциальности</a>
+                        </span>
+                    </label>
+                    <div id="orderModalPolitikaError"></div>
+                </div>
+                <div class="form-submit">
+                    <button class="btn btn--blue" type="submit"><span>Оставить заявку</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="consultationModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14">
+                    <use xlink:href="#svg-close"></use>
+                </svg>
+            </button>
+            <div class="modal-content__title">Оставить заявку</div>
+
+            <form action="" id="consultationModalForm">
+                <div class="form-inp">
+                    <input id="consultationModalFIO" type="text" class="form-inp__val" placeholder="Ваше Имя*"
+                           name="fio" required>
+                </div>
+                <div class="form-inp">
+                    <input id="consultationModalTel" type="tel" class="form-inp__val js-mask-phone"
+                           placeholder="Контактный телефон *" name="tel" required>
+                </div>
+                <div class="form-inp">
+                    <input type="email" class="form-inp__val" placeholder="Email" name="email">
+                </div>
+                <div class="form-inp">
+                    <input type="text" class="form-inp__val" placeholder="Название компании" name="company">
+                </div>
+                <div class="form-inp">
+                    <textarea class="form-inp__val" placeholder="Комментарий"></textarea>
+                </div>
+                <div class="form-politic">
+                    <label class="form-checkbox">
+                        <input id="consultationModalPolitika" type="checkbox" name="politica" value="1" checked>
+                        <span class="form-checkbox__text">
+                            Оставляя заявку, вы соглашаетесь с
+                            <a href=""  target="_blank">Политикой конфиденциальности</a>
+                        </span>
+                    </label>
+                    <div id="consultationModalPolitikaError"></div>
+                </div>
+                <div class="form-submit">
+                    <button class="btn btn--blue" type="submit"><span>Оставить заявку</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div style="display: none">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <symbol id="svg-next" viewBox="0 0 12.59 11.05">
+            <path fill="currentColor"
+                  d="M0,5.23c.02-.58.51-1.03,1.09-1.01l8.26.31-2.3-2.83c-.17-.21-.24-.46-.23-.7.01-.29.14-.58.39-.77.45-.37,1.11-.3,1.48.15l3.55,4.37c.25.26.37.6.36.96-.01.36-.17.69-.38.88l-3.93,4.13c-.4.42-1.06.44-1.48.04-.23-.22-.34-.51-.33-.8,0-.25.1-.49.29-.68l2.51-2.64-8.26-.32C.43,6.3-.02,5.81,0,5.23h0Z"/>
+        </symbol>
+        <symbol id="svg-prev" viewBox="0 0 12.59 11.05">
+            <path fill="currentColor"
+                  d="M12.59,5.82c-.02.58-.51,1.03-1.09,1.01l-8.26-.31,2.3,2.83c.17.21.24.46.23.7-.01.29-.14.58-.39.77-.45.37-1.11.3-1.48-.15L.36,6.3C.11,6.04-.01,5.7,0,5.34c.01-.36.17-.69.38-.88L4.31.33c.4-.42,1.06-.44,1.48-.04.23.22.34.51.33.8,0,.25-.1.49-.29.68l-2.51,2.64,8.26.32c.58.02,1.03.51,1.01,1.09h0Z"/>
+        </symbol>
+
+        <symbol id="svg-link" viewBox="0 0 22 22">
+            <path fill="currentColor"
+                  d="M11,22c.89,0,1.77-.02,2.64-.05,4.51-.16,8.15-3.8,8.31-8.31.03-.87.05-1.75.05-2.64s-.02-1.77-.05-2.64C21.8,3.85,18.15.2,13.65.05c-.87-.03-1.75-.05-2.64-.05s-1.77.02-2.64.05C3.85.2.21,3.85.05,8.36c-.03.87-.05,1.75-.05,2.64s.02,1.77.05,2.64c.16,4.51,3.8,8.15,8.31,8.31.87.03,1.75.05,2.64.05h0ZM6.38,15.28c-.39-.42-.37-1.09.06-1.48l6.06-5.62-3.62-.37c-.26-.03-.5-.15-.66-.33-.2-.21-.31-.51-.27-.82.06-.58.57-1,1.15-.94l5.6.58c.36.01.69.16.93.42.24.26.37.6.35.89l.15,5.7c.02.58-.44,1.06-1.02,1.08-.31,0-.6-.12-.8-.34-.17-.18-.27-.42-.28-.69l-.09-3.64-6.07,5.62c-.43.39-1.09.37-1.48-.06h0Z"/>
+        </symbol>
+
+        <symbol id="svg-rostest" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 999.9 991.8">
+            <polygon fill="currentColor"
+                     points="824.2 452.2 774.6 452.2 725 452.2 675.5 452.2 675.5 501.7 725 501.7 725 600.8 774.6 600.8 774.6 501.7 824.2 501.7 824.2 452.2"/>
+            <path fill="currentColor" d="M510.9,457.4c3.2-2,6.5-4,9.8-5.9"/>
+            <path fill="currentColor" d="M520.7,601.3c-3.3-1.9-6.5-3.8-9.8-5.9"/>
+            <path fill="currentColor"
+                  d="M520.7,601.3c71,40.7,157.2,45.2,232.1,12.2v67.8c-159.7,87.3-353.6,83.9-510.2-8.9-1.5-.8-2.9-1.7-4.4-2.6-79.2-48.9-103.7-152.7-54.9-231.8,13.8-22.3,32.6-41.1,54.9-54.9l4.4-2.6c156.6-92.8,350.5-96.2,510.2-8.9v67.8c-74.9-33-161-28.5-232.1,12.2-3.4,1.7-6.6,3.7-9.8,5.9-38.1,26.6-47.5,79.1-20.8,117.3,5.7,8.1,12.7,15.2,20.8,20.8,3.2,2,6.4,4,9.8,5.7Z"/>
+            <path fill="currentColor"
+                  d="M499.9,42.5c89,35.5,173.2,82,250.6,138.3,77.5,56.3,147.7,122.1,209,195.8-6.3,95.5-24.4,189.9-54,280.9-29.6,91.1-70.4,178.2-121.5,259.2-92.8,23.5-188.3,35.4-284.1,35.4s-191.2-11.9-284.1-35.4C113.4,754.1,53.1,568.4,40.5,376.5,163.5,228.7,321.4,113.9,499.9,42.5M499.9,0C304.3,75.2,131.9,200.5,0,363.3h0c11,209.3,76.9,412.1,191,587.9,100.7,27,204.6,40.7,308.9,40.6,104.4.1,208.3-13.6,309-40.7,56.9-87.5,102-182.1,134.2-281.4,32.3-99.2,51.4-202.3,56.8-306.5-65.7-81.1-141.7-153.2-226.2-214.5C689.5,87.4,597.4,37.4,499.9,0Z"/>
+        </symbol>
+
+        <symbol id="svg-pdf" viewBox="0 0 22 22">
+            <path fill="currentColor" d="M11.51,9.78c-.21-.1-.45-.15-.73-.15h-.43v2.74h.43c.21,0,.4-.03.57-.08.17-.06.32-.14.44-.26.13-.12.22-.26.29-.43.07-.17.1-.37.1-.6,0-.3-.06-.55-.18-.76-.12-.2-.28-.36-.49-.46Z"/>
+            <path fill="currentColor" d="M6,9.52h-.73v1.25h.73c.24,0,.43-.05.57-.14.14-.09.2-.25.2-.48s-.07-.39-.21-.49c-.14-.1-.33-.14-.55-.14Z"/>
+            <path fill="currentColor" d="M21.96,8.36C21.8,3.85,18.15.21,13.65.05c-.87-.03-1.75-.05-2.64-.05s-1.77.02-2.64.05C3.85.21.21,3.85.05,8.36c-.03.87-.05,1.75-.05,2.64s.02,1.77.05,2.64c.16,4.51,3.8,8.15,8.31,8.31.87.03,1.75.05,2.64.05h0c.89,0,1.77-.01,2.64-.04,4.51-.16,8.15-3.8,8.31-8.31.03-.87.05-1.75.05-2.64s-.02-1.77-.05-2.64ZM7.92,11.11c-.17.27-.41.47-.73.62-.32.14-.7.21-1.15.21h-.78v1.74h-1.41v-5.36h2.22c.4,0,.76.07,1.08.21.32.14.57.35.75.62.18.27.27.6.27.98s-.08.71-.25.98ZM13.46,12.09c-.14.33-.33.61-.58.85-.25.24-.55.42-.89.55-.35.13-.73.19-1.16.19h-1.89v-5.36h1.89c.56,0,1.06.11,1.48.34.42.23.76.54.99.94.24.4.35.87.35,1.4,0,.4-.07.76-.2,1.09ZM18.15,9.6h-2.19v.96h1.96v1.23h-1.96v1.88h-1.41v-5.36h3.6v1.28Z"/>
+        </symbol>
+
+        <symbol id="svg-close" viewBox="0 0 256 256">
+           <path fill="currentColor" d="M150.82,127.8L251.51,27.12c6.14-6.36,5.96-16.49-.39-22.62-6.2-5.99-16.03-5.99-22.23,0l-100.69,100.69L27.51,4.49C21.15-1.65,11.02-1.47,4.88,4.88c-5.99,6.2-5.99,16.03,0,22.23l100.69,100.69L4.88,228.49c-6.36,6.14-6.53,16.27-.39,22.62,6.14,6.36,16.27,6.53,22.62.39.13-.13.26-.26.39-.39l100.69-100.69,100.69,100.69c6.36,6.14,16.49,5.96,22.62-.39,5.99-6.2,5.99-16.03,0-22.23l-100.69-100.69Z"/>
+        </symbol>
+
+        <symbol id="svg-down" viewBox="0 0 297.48 170.75">
+           <path fill="currentColor" d="M149.42,170.75c-5.67.03-11.12-2.19-15.15-6.19L6.27,36.57C-2.09,28.2-2.09,14.64,6.27,6.27s21.93-8.37,30.29,0l112.85,113.07L262.27,6.49c8.95-7.66,22.42-6.62,30.08,2.33,6.84,7.99,6.84,19.77,0,27.75l-128,128c-3.97,3.94-9.34,6.16-14.93,6.19h0Z"/>
+        </symbol>
+
+        <symbol id="svg-up" viewBox="0 0 297.48 170.75">
+            <path fill="currentColor" d="M148.06,0c5.67-.03,11.12,2.19,15.15,6.19l128,128c8.37,8.37,8.37,21.93,0,30.29s-21.93,8.37-30.29,0l-112.85-113.07-112.85,112.85c-8.95,7.66-22.42,6.62-30.08-2.33-6.84-7.99-6.84-19.77,0-27.75L133.13,6.19C137.1,2.25,142.47.02,148.06,0h0Z"/>
+        </symbol>
+    </svg>
+</div>
+
+</div><!-- end main-->
+<script src="js/vendor.min.js"></script>
+
+<script src="js/app.min.js"></script>
+</body>
+</html>
+
