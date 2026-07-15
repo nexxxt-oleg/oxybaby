@@ -53,10 +53,27 @@
 }
 
 @media screen and (max-width: 991px) {
-  .header__nav__list a,
-  .header__slogan {
-    text-align: center;
+  .header__nav__list>li>a {
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: #001e42;
   }
+  .header__nav__list>li {
+    position: relative;
+  }
+  .header__nav__list>li:not(:first-child) {
+    border-top: 1px solid #d7d7d8;
+  }
+  .header__nav__list>li:hover .header__nav__sub-menu {
+    display: none;
+    opacity: 0 !important;
+    visibility: hidden;
+  }
+  .header__nav__sub {
+    padding-right: 30px;
+  }
+
   .modal-dialog {
     width: 400px;
     max-width: 400px;
