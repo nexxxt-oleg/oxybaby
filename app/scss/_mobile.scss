@@ -53,6 +53,31 @@
 }
 
 @media screen and (max-width: 991px) {
+  .header__nav__mob-accordion {
+    display: block;
+    position: relative;
+    &__btn {
+      position: absolute;
+      z-index: 10;
+      height: 40px;
+      width: 30px;
+      justify-content: flex-end;
+      display: flex;
+      border: none;
+      padding: 0;
+      align-items: center;
+      background: transparent;
+      top: -40px;
+      right: 0;
+
+      svg {
+        transition: all 0.2s ease-in-out;
+      }
+      &:not(.collapsed) svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
   .header__nav__list>li>a {
     padding: 10px 0;
     font-size: 15px;
@@ -70,8 +95,19 @@
     opacity: 0 !important;
     visibility: hidden;
   }
-  .header__nav__sub {
-    padding-right: 30px;
+
+  .header__nav__mob-accordion__list {
+    display: block !important;
+    li {
+      padding-bottom: 10px;
+      a {
+        display: block;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.2;
+        color: #001e42;
+      }
+    }
   }
 
   .modal-dialog {
